@@ -1,0 +1,55 @@
+.kittens-wrap{
+    border:1px solid $gray;
+    margin-bottom: 2.5rem;
+    height:50vh;
+    overflow:hidden;
+    position: relative;
+
+    .kitten-wrap{
+        height: 100%;
+        position: absolute;
+        background:$white;
+        visibility: hidden;
+        &.current{
+            visibility:visible;
+        }
+    }
+    .kitten-details{
+        padding:1.6rem;
+
+        p{
+            color:$dark-gray;
+        }
+    }
+
+    .picture-wrap{
+        position: relative;
+
+        .action-text{
+            position: absolute;
+            top:3rem;
+            left:2rem;
+            transform:rotate(-15deg);
+            font-size: 5rem;
+            text-transform: uppercase;
+            padding:1rem;
+            border-width: 1px;
+            border-style:solid;
+            border-radius:0.5rem;
+
+            &.dislike{
+                color:lighten($light-red, 10%);
+                border-color:lighten($light-red, 10%);
+            }
+            &.like{
+                color:$light-green;
+                border-color:$light-green;
+            }
+            &.superlike{
+                color:$teal;
+                border-color:$teal;
+            }
+
+        }
+    }
+}

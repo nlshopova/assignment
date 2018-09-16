@@ -1,0 +1,29 @@
+.actions-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  button {
+    background: $white;
+    border: 1px solid $light-gray;
+    font-size: 3.5rem;
+    padding: 2rem 2.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    @include box-shadow(0, 0, 5px, $light-gray, 1px);
+  }
+
+  .action-dislike i:before {
+    @include gradient-text($red, $light-red, vertical);
+  }
+  .action-superlike {
+    font-size: 5rem;
+
+    i:before {
+      @include gradient-text($teal, $light-teal, vertical);
+    }
+  }
+  .action-like i:before {
+    @include gradient-text($light-green, $green, vertical);
+  }
+}

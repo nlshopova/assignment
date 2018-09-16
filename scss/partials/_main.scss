@@ -1,0 +1,11 @@
+.wrapper{
+    width:30vw;
+    margin:1rem auto;
+    background-color: $white;
+    padding: 2.5rem;
+    border-radius: 2px;
+    position: relative;
+    box-sizing: border-box;
+
+    @include box-shadow(0, 0, 20px, $gray, 5px);
+}

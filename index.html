@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kittens Tinder</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-wrap">
+                <h1 id="logo">
+                    <i class="icon-fire"></i>Kittens</h1>
+            </div>
+            <div class="up-wrap">
+                <img src="images/profile-pic.jpg" alt="user profile picture" />
+            </div>
+        </header>
+        <section class="main" role="main">
+            <div class="kittens-wrap">
+
+            </div>
+            <div class="actions-wrap">
+                <button class="action-dislike" onClick="kittenAction('dislike')">
+                    <i class="icon-cancel"></i>
+                </button>
+                <button class="action-superlike" onClick="kittenAction('superlike')">
+                    <i class="icon-star"></i>
+                </button>
+                <button class="action-like" onClick="kittenAction('like')">
+                    <i class="icon-heart"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
